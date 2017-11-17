@@ -1,7 +1,7 @@
 defmodule PhoenixSwoosh.Mixfile do
   use Mix.Project
 
-  @version "0.2.0"
+  @version "0.3.0"
 
   def project do
     [app: :phoenix_swoosh,
@@ -31,9 +31,9 @@ defmodule PhoenixSwoosh.Mixfile do
   end
 
   defp deps do
-    [{:swoosh, "~> 0.1"},
-     {:phoenix, "~> 1.0"},
-     {:phoenix_html, "~> 2.2"},
+    [{:swoosh, "~> 0.11.0"},
+     {:phoenix, "~> 1.3.0"},
+     {:phoenix_html, "~> 2.9"},
      {:credo, "~> 0.8", only: [:dev, :test]},
      {:ex_doc, "~> 0.16", only: :docs},
      {:inch_ex, ">= 0.0.0", only: :docs}]
